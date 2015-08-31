@@ -410,7 +410,7 @@ $config['standardize_newlines'] = FALSE;
 |          for backwards compatibility purposes!
 |
 */
-$config['global_xss_filtering'] = FALSE;
+$config['global_xss_filtering'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------
@@ -509,3 +509,5 @@ define('IMAGES_PATH', $config['theme_abs_path'].'/img/' );
 define('CSS_PATH', $config['theme_abs_path'].'/css/' );
 define('SCRIPTS_PATH', $config['theme_abs_path'].'/js/' );
 define('PLUGINS_PATH', $config['base_url'].'assets/plugins/' );
+
+date_default_timezone_set("Asia/Calcutta");

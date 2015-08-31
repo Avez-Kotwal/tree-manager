@@ -25,33 +25,35 @@
   <!-- sidebar menu: : style can be found in sidebar.less -->
   <ul class="sidebar-menu">
     
-    <li class="active treeview">
-      <a href="#">
-        <i class="fa fa-dashboard"></i> <span>Dashboard</span></i>
-      </a>
-      
-    </li>
-    <li class="treeview">
+    <li class="<?php echo ($this->uri->uri_string() == strtolower(CLASS_NAME).'-dashboard') ? 'active' : ''; ?> treeview">
       <a href="<?php echo site_url().strtolower(CLASS_NAME).'-dashboard'; ?>">
+        <i class="fa fa-dashboard"></i> <span>Dashboard</span></i>
+      </a>      
+    </li>
+    
+    <li class="<?php echo ($this->uri->uri_string() == strtolower(CLASS_NAME).'-jobs') ? 'active' : ''; ?> treeview">
+      <a href="<?php echo site_url().strtolower(CLASS_NAME).'-jobs'; ?>">
         <i class="fa fa-files-o"></i>
         <span>Job</span>
-      </a>
-      
+      </a>      
     </li>
-    <li>
-      <a href="KPI-main-menu.html">
+    
+    <li class="<?php echo ($this->uri->uri_string() == strtolower(CLASS_NAME).'-kpis') ? 'active' : ''; ?> treeview">
+    	<a href="<?php echo site_url().strtolower(CLASS_NAME).'-kpis'; ?>">
         <i class="fa fa-th"></i> <span>KPI's</span> 
       </a>
     </li>
-    <li class="treeview">
-      <a href="compilance.html">
+    
+    <li class="<?php echo ($this->uri->uri_string() == strtolower(CLASS_NAME).'-compliance') ? 'active' : ''; ?> treeview">
+    	<a href="<?php echo site_url().strtolower(CLASS_NAME).'-compliance'; ?>">
         <i class="fa fa-pie-chart"></i>
         <span>Compliance</span>
         </i>
       </a>
     </li>
-    <li class="treeview">
-      <a href="setting.html">
+    
+    <li class="<?php echo ($this->uri->uri_string() == strtolower(CLASS_NAME).'-settings') ? 'active' : ''; ?> treeview">
+    	<a href="<?php echo site_url().strtolower(CLASS_NAME).'-settings'; ?>">
         <i class="fa fa-laptop"></i>
         <span>Settings</span>
         </i>

@@ -25,6 +25,10 @@
 <!-- DATA TABES SCRIPT -->
 <script src="<?php echo PLUGINS_PATH; ?>datatables/jquery.dataTables.min.js" type="text/javascript"></script>
 <script src="<?php echo PLUGINS_PATH; ?>datatables/dataTables.bootstrap.min.js" type="text/javascript"></script>
+<!-- InputMask -->
+<script src="<?php echo PLUGINS_PATH; ?>input-mask/jquery.inputmask.js" type="text/javascript"></script>
+<script src="<?php echo PLUGINS_PATH; ?>input-mask/jquery.inputmask.date.extensions.js" type="text/javascript"></script>
+<script src="<?php echo PLUGINS_PATH; ?>input-mask/jquery.inputmask.extensions.js" type="text/javascript"></script>
 <!-- Bootstrap WYSIHTML5 -->
 <script src="<?php echo PLUGINS_PATH; ?>bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>
 <!-- Slimscroll -->
@@ -46,6 +50,15 @@
 			increaseArea : '20%' // optional
 		});
 	}); 
+	$('.datepicker').datepicker({
+	    format: 'dd-mm-yyyy',
+	    autoclose: true,
+	    todayBtn: "linked",
+	    clearBtn: true,
+	    todayHighlight: true,
+	    toggleActive: true
+	});
+	//.datepicker("setDate", "0");
 </script>
 <footer class="main-footer">
         <div class="pull-right hidden-xs">
